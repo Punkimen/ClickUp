@@ -1,0 +1,146 @@
+.input-block {
+
+
+  &__label {
+    margin-bottom: 24px;
+  }
+
+  &__body {
+    position: relative;
+
+    .input-block__range {
+      position: absolute;
+      bottom: 0;
+      left: 24px;
+      right: 24px;
+      width: auto;
+      z-index: 4;
+    }
+  }
+
+  &__input {
+    cursor: auto;
+    display: block;
+    width: 100%;
+    font-family: "Nekst", serif;
+    background: #F3F3F4;
+    border-radius: 16px;
+    font-size: 30px;
+    line-height: 36px;
+    color: $colorGray;
+    padding: 14px 90px 14px 24px;
+    border: 2px solid #f3f3f4;
+    outline: none;
+    transition: all ease .2s;
+
+    @media(max-width:$md5) {
+      font-size: 22px;
+      line-height: 20px;
+    }
+
+    &:read-only {
+      pointer-events: none;
+    }
+
+    &:focus {
+      background: #fff;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  &__range {
+
+
+    &.range-slider {
+      height: 2px;
+      background: #E1E1E1;
+    }
+
+    .range-slider__thumb {
+      background: $colorOrange;
+      width: 20px;
+      height: 20px;
+    }
+
+    .range-slider__range {
+      top: 0;
+      left: 0 !important;
+      transform: translate(0, 0);
+      height: 2px;
+      background: $colorOrange;
+    }
+
+    .range-slider__thumb[data-lower] {
+      display: none;
+    }
+
+    &:hover {
+      .range-slider__thumb {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+
+      height: 1px;
+
+      .range-slider__range {
+        height: 1px;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__unit {
+    font-size: 30px;
+    line-height: 36px;
+    color: $colorGray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 24px;
+    display: block;
+    max-width: 63px;
+    text-align: right;
+
+    @media(max-width:$md5) {
+      font-size: 22px;
+      line-height: 20px;
+    }
+
+    span {
+      font-size: 20px;
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -10px;
+    }
+
+    &_field {
+      color: $colorGray;
+      position: relative;
+      z-index: 2;
+      font-family: "Nekst", serif;
+      border: none;
+      outline: none;
+      max-width: 69px;
+      width: 100%;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 15px 22px 16px 17px;
+      background: #EBEBEC;
+      border-radius: 16px;
+      right: -17px;
+
+      @media(max-width:$md5) {
+        font-size: 22px;
+        line-height: 20px;
+      }
+
+      &:focus {
+        background: #fff;
+      }
+    }
+  }
+}
