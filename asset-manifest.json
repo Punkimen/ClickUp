@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ClickUp/static/css/main.1a59c37b.css",
+    "main.js": "/ClickUp/static/js/main.b242660c.js",
+    "static/media/Nekst-Black.woff": "/ClickUp/static/media/Nekst-Black.f0e2921efcf1112b1749.woff",
+    "static/media/Nekst-Black.woff2": "/ClickUp/static/media/Nekst-Black.44814bfd3ba4a266cf1d.woff2",
+    "static/media/Gilroy-Regular.woff": "/ClickUp/static/media/Gilroy-Regular.ebe86c0337572553acea.woff",
+    "static/media/Gilroy-Regular.woff2": "/ClickUp/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
+    "index.html": "/ClickUp/index.html",
+    "static/media/preloader.svg": "/ClickUp/static/media/preloader.4e82ac858606a43fa04f9de824dc3dc3.svg",
+    "main.1a59c37b.css.map": "/ClickUp/static/css/main.1a59c37b.css.map",
+    "main.b242660c.js.map": "/ClickUp/static/js/main.b242660c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a59c37b.css",
+    "static/js/main.b242660c.js"
+  ]
+}
